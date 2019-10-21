@@ -1,0 +1,719 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: .35rem;
+}
+
+img {
+	border: 0px;
+	vertical-align: middle;
+}
+
+li {
+	list-style: none;
+}
+
+:root {
+	--font30: 0.3rem;
+	--font33: 0.33rem;
+	--font35: 0.35rem;
+	--font37: 0.37rem;
+	--font40: 0.4rem;
+	--font42: 0.42rem;
+	--font45: 0.45rem;
+}
+
+.top_10 {
+	margin-top: .1rem;
+}
+
+.top_20 {
+	margin-top: .2rem;
+}
+
+.top_30 {
+	margin-top: .3rem;
+}
+
+.top_35 {
+	margin-top: .35rem;
+}
+
+.top_40 {
+	margin-top: .4rem;
+}
+
+.top_50 {
+	margin-top: .5rem;
+}
+
+.top_55 {
+	margin-top: .55rem;
+}
+
+.top_60 {
+	margin-top: .6rem;
+}
+
+.top_65 {
+	margin-top: .65rem;
+}
+
+.top_70 {
+	margin-top: .7rem;
+}
+
+.top_75 {
+	margin-top: .75rem;
+}
+
+.top_80 {
+	margin-top: .8rem;
+}
+
+.top_85 {
+	margin-top: .85rem;
+}
+
+.top_90 {
+	margin-top: .9rem;
+}
+
+.top_100 {
+	margin-top: 1rem;
+}
+
+.textal {
+	text-align: center;
+}
+
+.linehei {
+	line-height: .6rem;
+}
+
+.content {
+	font-family: Arial, "微软雅黑";
+	width: 6.4rem;
+	/*height: 13rem;*/
+	/*margin:0 auto 4.7rem;*/
+	position: relative;
+	font-size: var(--font33);
+	/*padding: 0.6rem  .29rem 0;*/
+	border: 1px solid red;
+	box-sizing: border-box;
+	margin: auto;
+	padding: 0 0.06rem 0;
+	/*background: url(../images/img7.png)no-repeat  center;*/
+	/*background: url(../images/img72.png) no-repeat center;*/
+	/*background-size: cover;*/
+	/*拉伸图片与手机模式下相同效果 */
+/*	overflow: hidden;*/
+}
+
+.creditCard {
+	text-align: center;
+	font-weight: 600;
+	position: absolute;
+	top: 0.7rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.contentcredit {
+    width: 98.1%;
+    height: 6.4rem;
+    /*background: red;*/
+    position: absolute;
+    top: 1.6rem;
+    z-index: 2;
+}
+
+
+/*左边卡面*/
+
+.leftFixed {
+	position: absolute;
+	width: 1.2rem;
+	height: 6.7rem;
+	/*background: green;*/
+}
+
+.leftFixed_ul {
+	width: 100%;
+	height: 100%;
+	/*background: sandybrown;*/
+}
+
+.leftFixed_li {
+	width: 100%;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	text-align: center;
+	border: 1px solid #000;
+	box-sizing: border-box;
+	border-radius: 10px;
+	margin-top: .08rem;
+	font-weight: 600;
+	background: seashell;
+}
+
+
+/*右边第一页*/
+
+.right1 {
+	/*display: none;*/
+	position: absolute;
+	width: 5rem;
+	height: 100%;
+	/*background: saddlebrown;*/
+	right: 0;
+}
+
+.right1 .right1_ul1 {
+	width: 100%;
+	height: 0.7rem;
+	margin-top: .08rem;
+}
+
+.right1 .right1_li {
+    width: 32%;
+    height: .7rem;
+    float: left;
+    text-align: center;
+    line-height: .7rem;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-weight: 600;
+    background: seashell;
+    margin-left: 0.04rem;
+}
+
+
+/*右边第二页*/
+
+.right2 {
+	display: none;
+	position: absolute;
+	width: 5rem;
+	height: 100%;
+	/*background: skyblue;*/
+	right: 0;
+}
+
+
+
+.right2 .right1_ul1 {
+	width: 100%;
+	height: 0.7rem;
+	margin-top: .08rem;
+}
+
+.right2 .right1_li {
+    width: 23.5%;
+    height: .7rem;
+    float: left;
+    /* background: red; */
+    text-align: center;
+    line-height: .7rem;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-weight: 600;
+    background: seashell;
+    position: relative;
+    margin-left: 0.06rem;
+}
+
+.right2 .right1_li input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1.2rem;
+	height: .67rem;
+	border: none;
+	border-radius: .1rem;
+	outline: none;
+	font-size: .4rem;
+}
+
+/*翻页按扭*/
+
+.tmright {
+	position: absolute;
+	top: 5.8rem;
+	left: 5.2rem;
+	width: .8rem;
+	/*height: .8rem;
+    background: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    text-align: center;
+    line-height: .65rem;
+    font-size: .8rem;
+    color: #FFF;*/
+}
+
+.tmleft {
+	display: none;
+	position: absolute;
+	top: 5.8rem;
+	left: 1.4rem;
+	width: .8rem;
+	height: .8rem;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 50%;
+	text-align: center;
+	line-height: .7rem;
+	font-size: .8rem;
+	color: #FFF;
+}
+
+
+/*旋转*/
+
+.rotate {
+	transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	/* IE 9 */
+	-moz-transform: rotate(180deg);
+	/* Firefox */
+	-webkit-transform: rotate(180deg);
+	/* Safari 和 Chrome */
+	-o-transform: rotate(180deg);
+	/* Opera */
+}
+
+.rotate2 {
+	transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	/* IE 9 */
+	-moz-transform: rotate(0deg);
+	/* Firefox */
+	-webkit-transform: rotate(0deg);
+	/* Safari 和 Chrome */
+	-o-transform: rotate(0deg);
+	/* Opera */
+}
+
+
+/*弹窗背景*/
+
+.setting {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	display: none;
+	z-index: 5;
+}
+
+
+/*可用弹窗*/
+
+.usableUp {
+	width: 6.4rem;
+	position: fixed;
+	top: 30%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	/*width: 90%;*/
+	height: 3.6rem;
+	background: #fff5ee;
+	display: none;
+	z-index: 5;
+}
+
+.kaName {
+	text-align: center;
+	margin-top: .5rem;
+	font-size: 0.5rem;
+}
+
+.sketinStyle {
+	width: 30%;
+	height: 0.5rem;
+	position: absolute;
+	top: 1.4rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+	font-size: 0.5rem;
+	text-align: center;
+}
+
+
+/*确定取消*/
+
+.usableUp_ul {
+	position: absolute;
+	top: 2.2rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 50%;
+	height: 0.6rem;
+	/*background: red;*/
+}
+
+.usableUp_ul li {
+	width: 30%;
+	height: 100%;
+	background: #fff;
+	float: left;
+	line-height: 0.6rem;
+	text-align: center;
+}
+
+.usableUp_ul li:nth-of-type(2) {
+	float: right;
+}
+
+
+/*提醒还钱*/
+
+.color_y {
+	background: yellow !important;
+}
+
+
+/*已用弹窗*/
+
+.UsedUp {
+	width: 6.4rem;
+	position: fixed;
+	top: 30%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	/*width: 90%;*/
+	height: 3.6rem;
+	background: #fff5ee;
+	display: none;
+	z-index: 5;
+}
+
+.usedName {
+	text-align: center;
+	margin-top: .2rem;
+	font-size: 0.5rem;
+}
+
+.usedSum {
+	text-align: center;
+	font-size: 0.5rem;
+}
+
+.UsedUp ul {
+	width: 100%;
+	height: 0.5rem;
+	margin: auto;
+	/*background: red;*/
+}
+
+.UsedUp ul li {
+	width: 33%;
+	float: left;
+	text-align: center;
+}
+
+
+/*.UsedUp ul li:nth-of-type(2){
+	float: right;
+}*/
+
+.usedsuaa {
+	width: 30%;
+	height: 0.5rem;
+	position: absolute;
+	top: 2.1rem;
+	left: 0.1rem;
+	margin: auto;
+	font-size: 0.5rem;
+	text-align: center;
+}
+
+.usedsuaa:nth-of-type(2) {
+	left: 2.2rem;
+}
+
+.usedsuaa:nth-of-type(3) {
+	left: 4.3rem;
+}
+
+
+/*确定取消*/
+
+.UsedUp .Used_ul {
+	position: absolute;
+	top: 2.8rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 50%;
+	height: 0.6rem;
+	/*background: red;*/
+}
+
+.UsedUp .Used_ul li {
+	width: 30%;
+	height: 100%;
+	background: #fff;
+	float: left;
+	line-height: 0.6rem;
+	text-align: center;
+}
+
+.UsedUp .Used_ul li:nth-of-type(2) {
+	float: right;
+}
+
+
+/*确认还款弹窗*/
+
+.refundUp {
+	width: 6.4rem;
+	position: fixed;
+	top: 30%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	/*width: 90%;*/
+	height: 3.6rem;
+	background: #fff5ee;
+	display: none;
+	z-index: 5;
+}
+.namegiff {
+	text-align: center;
+	margin-top: 0.6rem;
+	color: #ff0000;
+	font-weight: 800;
+}
+.rjsfgiff {
+	text-align: center;
+	margin-top: 0.2rem;
+	color: #ff0000;
+	font-weight: 800;
+}
+
+.giffsuaa {
+	width: 1.2rem;
+	height: 0.5rem;
+	background: #fff;
+	text-align: center;
+	line-height: 0.5rem;
+	position: absolute;
+}
+
+.nngiff {
+	top: 2.3rem;
+	left: 1.5rem;
+	color: rgba(100, 98, 98, 0.5);
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.figiff {
+	top: 2.3rem;
+	left: 3.5rem;
+}
+
+/*底部*/
+.bottoms {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 6.4rem;
+	height: 1rem;
+	z-index:3;
+	background: #fff5ee;
+}
+.bottomsul1{
+	width: 100%;
+	height: 100%;
+	
+}
+.bottomsul1>li{
+	width: 100%;
+	height: 50%;
+	/*background: yellow;*/
+}
+.bottomsul2{
+	width: 100%;
+	height: 100%;
+		
+}
+.bottomsul2>li{
+	width: 25%;
+	height: 100%;
+	float: left;	
+	/*background: skyblue;*/
+	text-align: center;
+	line-height: 0.5rem;
+}
+.bottomsul2 li{
+	border: 1px solid #000;
+	box-sizing: border-box;
+}
+.fcwfpgy ,.hhu{
+	position: relative;
+}
+.fcwfpgy input,.hhu input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	border-radius: .1rem;
+	outline: none;
+	font-size: .4rem;
+	text-align: center;
+}
+.dateivgd{
+	font-size: .28rem;
+	font-weight: 600;
+}
+/*应用*/
+.apply{
+	position: fixed;
+	bottom: 1rem;
+	left: 0;
+    width: 0.9rem;
+    height: 0.9rem;
+    text-align: center;
+    line-height: 0.9rem;
+    float: left;
+    font-size: .28rem;
+    border-radius: 50%;
+    background: rgba(182, 182, 182, 0.5);
+
+    z-index: 4;
+}
+/*圆形按扭*/
+.circularBtn{
+	position: fixed;
+	bottom: 1rem;
+	left: -13rem;
+	right: 0;
+	margin: auto;
+	width: 6.4rem;
+	height: 0.9rem;
+	/*background: #fff5ee;*/
+	z-index: 2;
+	/*display: none;*/
+}
+.circularBtn li{
+    width: 0.9rem;
+    height: 0.9rem;
+    text-align: center;
+    line-height: 0.9rem;
+    float: left;
+    font-size: .28rem;
+    border-radius: 50%;
+    background: rgba(182, 182, 182, 0.5);
+    margin-left: 0.92rem;
+}
+.circularBtn li:nth-of-type(1){
+	margin-left: 0;
+	background: rgba(182, 182, 182, 0);
+}
+
+/*背景层*/
+.Backgroundnfc{
+	width: 6.4rem;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	margin: auto;
+	z-index: 1;
+	/*background: red;*/
+}
+
+.applyUP {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	display: none;
+	z-index:2;
+}
+.xupewgUp {
+	width: 6.4rem;
+	position: fixed;
+	top:11rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 5rem;
+	background: #fff5ee;
+	/*display: none;*/
+	z-index:3;
+}
+.historysup P{
+    text-align: center;
+    height: 0.5rem;
+    /*background: red;*/
+    line-height: 0.5rem;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+	
+}
+.datalkfa{
+	width: 100%;
+	height: 4.3rem;
+	overflow:scroll;
+	padding: 0 0.06rem 0;
+}
+.datalkfa li{
+	height: 0.5rem;
+	/*background: red;*/
+	line-height: 0.5rem;
+	border-bottom: 1px solid #000;
+    box-sizing: border-box;
+    background: rgba(213, 211, 210, 0.7)
+}
+.datalkfa li p{
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+/*清除弹窗*/
+.eliminate{
+	width: 6.4rem;
+	height: 6rem;
+	position: fixed;
+	top:11rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: #fff5ee;
+	/*display: none;*/
+	z-index:3;
+	padding: 0 0.2rem 0;
+}
+.eliminate h3{
+	text-align: center;
+	margin-top: 0.2rem;
+}
+.eliminate p{
+	height: 0.5rem;
+	line-height: 0.5rem;
+	border: 1px solid #000;
+	box-sizing: border-box;
+	text-indent: 2em;
+	margin-top: 0.05rem;
+}

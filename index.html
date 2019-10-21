@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/css.css" />
+		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/setRootRem750.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+
+	<body>
+		<!--内容-->
+		<!--<div class="content"> </div>-->
+		<div class="content">
+			<img src="images/img7.png"width="100%"/>
+			<!--背景层-->
+			<div class="Backgroundnfc"></div>
+			<p class="creditCard">信用卡用卡详情</p>
+			<div class="contentcredit">
+				<div class="leftFixed">
+					<ul class="leftFixed_ul">
+						<li class="leftFixed_li">卡片</li>
+						<li class="leftFixed_li">交通</li>
+						<li class="leftFixed_li">招商</li>
+						<li class="leftFixed_li">中信</li>
+						<li class="leftFixed_li">广发</li>
+						<li class="leftFixed_li">民生</li>
+						<li class="leftFixed_li">兴业</li>
+					</ul>
+				</div>
+				<!--/*右边第一页*/-->
+				<div class="right1">
+					<ul class="right1_ul1">
+						<li class="right1_li">总额</li>
+						<li class="right1_li" data-name="false">可用</li>
+						<li class="right1_li">已用</li>
+					</ul>
+					<ul class="right1_ul1">
+						<li class="right1_li">18000</li>
+						<li class="right1_li usable_ tong" data-name="交通"></li>
+						<li class="right1_li sket_tong"></li>
+					</ul>
+					<ul class="right1_ul1">
+						<li class="right1_li">27000</li>
+						<li class="right1_li usable_ shang" data-name="招商"></li>
+						<li class="right1_li sket_shang"></li>
+					</ul>
+					<ul class="right1_ul1">
+						<li class="right1_li">12000</li>
+						<li class="right1_li usable_ xin" data-name="中信"></li>
+						<li class="right1_li sket_xin"></li>
+					</ul>
+					<ul class="right1_ul1">
+						<li class="right1_li">47000</li>
+						<li class="right1_li usable_ fa" data-name="广发"></li>
+						<li class="right1_li sket_fa"></li>
+					</ul>
+					<ul class="right1_ul1">
+						<li class="right1_li">30000</li>
+						<li class="right1_li usable_ mshegn" data-name="民生"></li>
+						<li class="right1_li sket_mshegn"></li>
+					</ul>
+					<ul class="right1_ul1">
+						<li class="right1_li">50000</li>
+						<li class="right1_li usable_ ye" data-name="兴业"></li>
+						<li class="right1_li sket_ye"></li>
+					</ul>
+				</div>
+				<!--/*右边第二页*/-->
+				<div class="right2">
+					<ul class="right1_ul1">
+						<li class="right1_li">已出账单</li>
+						<li class="right1_li">还款日</li>
+						<li class="right1_li">待出账单</li>
+						<li class="right1_li">账单日</li>
+					</ul>
+					<ul class="right1_ul1">
+						<!--<li class="right1_li"><input type="text" name="" id="" value="" /></li>-->
+						<li class="right1_li tong_already refund" data-name="交通"></li>
+						<li class="right1_li repay_tong"></li>
+						<li class="right1_li tong_stay"></li>
+						<li class="right1_li tong_date" data-date="12">12号</li>
+					</ul>
+					<ul class="right1_ul1">
+						<li class="right1_li shang_already refund" data-name="招商"></li>
+						<li class="right1_li repay_shang"></li>
+						<li class="right1_li shang_stay"></li>
+						<li class="right1_li shang_date" data-date="2">2号</li>
+					</ul>
+					<ul class="right1_ul1">
+						<li class="right1_li xin_already refund" data-name="中信"></li>
+						<li class="right1_li repay_xin"></li>
+						<li class="right1_li xin_stay"></li>
+						<li class="right1_li xin_date" data-date="8">8号</li>
+					</ul>
+					<ul class="right1_ul1">
+						<li class="right1_li fa_already refund" data-name="广发"></li>
+						<li class="right1_li repay_fa"></li>
+						<li class="right1_li fa_stay"></li>
+						<li class="right1_li fa_date" data-date="21">21号</li>
+					</ul>
+					<ul class="right1_ul1">
+						<li class="right1_li mshegn_already refund" data-name="民生"></li>
+						<li class="right1_li repay_mshegn"></li>
+						<li class="right1_li mshegn_stay"></li>
+						<li class="right1_li mshegn_date" data-date="19">19号</li>
+					</ul>
+					<ul class="right1_ul1">
+						<li class="right1_li ye_already refund" data-name="兴业"></li>
+						<li class="right1_li repay_ye"></li>
+						<li class="right1_li ye_stay"></li>
+						<li class="right1_li ye_date" data-date="6">6号</li>
+					</ul>
+
+				</div>
+				<!--向右-->
+				<!--<span class="tmright">></span>-->
+				<span class="tmright">
+					<img src="images/imgyytm.png"width="100%"/>
+				</span>
+				<!--向左-->
+				<!--<span class="tmleft"><</span>-->
+			</div>
+			<!--弹窗背景-->
+			<div class="setting">
+				<!--<div class="setting" style="display: block;">-->
+
+			</div>
+			<!--可用弹窗-->
+			<div class="usableUp">
+				<p class="kaName"><span class="kaKeyongname">name</span>可用</p>
+				<input type="text" class="sketin  sketinStyle" value="" onkeyup="num(this)" />
+				<ul class="usableUp_ul">
+					<li class="confirmli">确定</li>
+					<li class="cancelli">取消</li>
+				</ul>
+			</div>
+			<!--已用弹窗-->
+			<div class="UsedUp">
+				<p class="usedName"><span class="kaUsedgname">name</span>已用</p>
+				<!--已用全额-->
+				<p class="usedSum">1233</p>
+				<ul>
+					<li>已出账单</li>
+					<li>待出账单</li>
+					<li>+</li>
+				</ul>
+				<input type="text" class="usedsuaa already" value="" onkeyup="num(this)" />
+				<input type="text" class="usedsuaa stay" value="" onkeyup="num(this)" />
+				<input type="text" class="usedsuaa addStay" value="" onkeyup="num(this)" />
+				<ul class="Used_ul">
+					<li class="usedconfirm">确定</li>
+					<li class="usedcancel">取消</li>
+				</ul>
+			</div>
+			<!--确认还款弹窗-->
+			<div class="refundUp">
+				<p class="namegiff">name</p>
+				<p class="rjsfgiff">确认已还款？</p>
+				<div class="nngiff giffsuaa">已还款</div>
+				<div class="figiff giffsuaa">未还款</div>
+			</div>
+			<!--历史弹窗-->
+			<div class="xupewgUp">
+				<div class="historysup">
+					<p>DEBT</p>
+					<!--数据-->
+					<ul class="datalkfa">
+						<!--<li><p></p><span></span></li>-->
+						
+
+					</ul>
+				</div>
+			</div>
+			<!--清除弹窗-->
+			<div class="eliminate">
+				<h3>清除数据</h3>
+				<p>交通</p>
+				<p>招商</p>
+				<p>中信</p>
+				<p>广发</p>
+				<p>民生</p>
+				<p>兴业</p>
+				<p>欠款记录</p>
+				<p>清除记录</p>
+			</div>
+
+			<!--应用-->
+			<div class="applyUP"></div>
+			<div class="apply">更多</div>
+			<!--圆形按扭-->
+			<ul class="circularBtn">
+				<li></li>
+				<li class="history">历史</li>
+				<li class="elimibon">清除</li>
+				<li class="record">记录</li>
+			</ul>
+			<!--底部-->
+			<div class="bottoms">
+				<ul class="bottomsul1">
+					<li>
+						<ul class="bottomsul2">
+							<li>支付宝</li>
+							<li>卡</li>
+							<li>debt</li>
+							<li>记录日期</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="bottomsul2">
+							<li class="fcwfpgy"><input type="text" name="" id="fcwfpgy" value="" /></li>
+							<li class="hhu"><input type="text" name="" id="hhu" value="" /><input type="hidden" name="hiddenid" id="hiddenid" value="" /></li>
+							<li class="debts"></li>
+							<li class="dateivgd"></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+	</body>
+	<script src="js/clipboard.min_1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/liangen.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/to_load.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/ind.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var myDate = new Date(); //时间
+		var month = myDate.getMonth() //月
+		var month_1 = month + 1; //月
+		var days = myDate.getDate() //日
+		var Year = myDate.getFullYear()
+		console.log(Year)
+		
+	</script>
+</html>
