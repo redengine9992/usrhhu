@@ -103,8 +103,8 @@ li {
 	position: relative;
 	font-size: var(--font33);
 	/*padding: 0.6rem  .29rem 0;*/
-	border: 1px solid red;
-	box-sizing: border-box;
+/* 	border: 1px solid red; */
+/* 	box-sizing: border-box; */
 	margin: auto;
 	padding: 0 0.06rem 0;
 	/*background: url(../images/img7.png)no-repeat  center;*/
