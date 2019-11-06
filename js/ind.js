@@ -4,15 +4,32 @@
 	var month = myDate.getMonth() //月
 	var month_1 = month + 1; //月
 	var days = myDate.getDate() //日
+//	var days = 21 //日
 	//还款日期
-	var refund_date = [month_1 + 1 + '/6', month_1 + '/20', month_1 + '/27', month_1 + 1 + '/10', month_1 + 1 + '/9', month_1 + '/26'];
+	var refund_date = [month_1 + '/6', month_1 + '/20', month_1 + '/27', month_1 + '/10', month_1 + '/9', month_1 + '/26'];
+	var refund_date2 = [month_1 + 1 + '/6', month_1 + 1 + '/20', month_1 + 1 + '/27', month_1 + 1 + '/10', month_1 + 1 + '/9', month_1 + 1 + '/26'];
 
-	$('.repay_tong').html(refund_date[0])
-	$('.repay_shang').html(refund_date[1])
-	$('.repay_xin').html(refund_date[2])
-	$('.repay_fa').html(refund_date[3])
-	$('.repay_mshegn').html(refund_date[4])
-	$('.repay_ye').html(refund_date[5])
+
+	//还款日期调整
+	function adjustment(days, dates, mame, counts) {
+		if(days < dates) {
+			$('.repay_' + mame).html(refund_date[counts])
+		} else {
+			$('.repay_' + mame).html(refund_date2[counts])
+		}
+	}
+	adjustment(days,12,"tong",0)
+	adjustment(days,2,"shang",1)
+	adjustment(days,8,"xin",2)
+	adjustment(days,21,"fa",3)
+	adjustment(days,19,"mshegn",4)
+	adjustment(days,6,"ye",5)
+
+	//	$('.repay_shang').html(refund_date[1])
+//	$('.repay_xin').html(refund_date[2])
+//	$('.repay_fa').html(refund_date[3])
+//	$('.repay_mshegn').html(refund_date[4])
+//	$('.repay_ye').html(refund_date[5])
 
 	//判断旋转
 	var rotate = false;
